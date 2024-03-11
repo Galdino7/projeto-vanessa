@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: "Playfair Display", serif;
+    color: var(--branco);
+}
+
+:root{
+    --dourado: rgb(255, 215, 0);
+    --beige: rgb(213, 186, 152);
+    --preto: rgb(0, 0, 0);
+    --branco: rgb(255, 255, 255);
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    background-color: var(--beige);
+    color:  var(--dourado);
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+}
+
+header>a {
+    color: white;
+}
+
+#biografia {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: var(--beige);
+    color: var(--dourado);
+    /* height: 560px; */
+    /* width: 90%; */
+    border-radius: 10px;
+    position: relative;
+}
+
+#biografia>img {
+    border-radius: 10px;
+    height: 300px;
+    border: solid --dourado 1px;
+}
+
+#biografia>div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+#localizacao {
+    display: flex;
+    /* flex-direction: column; */
+    margin: 20px 10px 0px 10px;
+    background-color: var(--beige);
+    color: var(--dourado);
+    border-radius: 10px;
+
+}
+
+#localizacao>a>img {
+    border-radius: 10px;
+    height: 300px;
+    width: fit-content;
+    margin: auto;
+}
+
+#localizacao>div {
+    display: flex;
+    flex-direction: column
+}
+
+#localizacao>div>a {
+    color: var(--dourado);
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+#localizacao>div>p {
+    padding-left: 20px;
+    /* padding-bottom: 10px; */
+    padding-right: 20px;
+}
+
+footer {
+    display: flex;
+    margin-top: 10px;
+    background-color: black;
+    padding: 10px 0px;
+    justify-content: space-around;
+    border-top: solid 2px gold;
+}
+
+
+footer>a {
+    color: white;
+}
+
+header>h1,
+header>a {
+    transition: .2s;
+}
+
+header>h1:hover {
+    color: gold;
+    scale: 1.1;
+}
+
+header>a:hover {
+    scale: 1.2;
+    color: gold;
+}
+
+@media(max-width: 630px) {
+
+    main {
+        flex-direction: column;
+    }
+
+    div >img{
+        width: 50px;
+        height: 50px;   
+                            
+    }
+}
